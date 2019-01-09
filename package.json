@@ -1,0 +1,21 @@
+{
+  "name": "vue-stickyroll",
+  "version": "0.1.0",
+  "description": "Vue.js version of stickyroll",
+  "main": "index.js",
+  "repository": "git@github.com:stickyroll/vue-stickyroll.git",
+  "author": "Gregor Adams <greg@pixelass.com> (https://pixelass.com)",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "lerna run build && lerna run dev --parallel"
+  },
+  "dependencies": {
+    "lerna": "^3.8.5",
+    "prettier": "1.15.3"
+  },
+  "workspaces": [
+    "packages/*",
+    "site/*"
+  ]
+}

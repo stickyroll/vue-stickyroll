@@ -1,0 +1,60 @@
+{
+  "name": "@stickyroll/vue",
+  "version": "1.0.0",
+  "description": "Vue.js version of stickyroll",
+  "keywords": [
+    "vue.js",
+    "vue",
+    "sticky",
+    "parallax",
+    "fullscreen",
+    "scroll",
+    "animate"
+  ],
+  "author": "Gregor Adams <greg@pixelass.com>",
+  "homepage": "https://stickyroll.github.io/react-stickyroll/",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "index.js",
+    "index.css"
+  ],
+  "main": "index.js",
+  "module": "dist/esm/index.js",
+  "directories": {
+    "lib": "dist",
+    "doc": "doc",
+    "test": "test"
+  },
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": "git@github.com:stickyroll/vue-stickyroll.git",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "rollup -c",
+    "dev": "yarn prebuild && rollup -cw"
+  },
+  "bugs": {
+    "url": "https://github.com/stickyroll/vue-stickyroll/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.2",
+    "@babel/plugin-proposal-class-properties": "7.2.3",
+    "@babel/plugin-proposal-decorators": "7.2.3",
+    "@babel/plugin-proposal-object-rest-spread": "7.2.0",
+    "@babel/preset-env": "7.2.3",
+    "babel-plugin-syntax-jsx": "6.18.0",
+    "babel-plugin-transform-vue-jsx": "3.7.0",
+    "rimraf": "2.6.3",
+    "rollup": "1.0.2",
+    "rollup-plugin-babel": "4.2.0",
+    "rollup-plugin-css-only": "0.4.0",
+    "rollup-plugin-json": "^3.1.0",
+    "rollup-plugin-vue": "4.3.2",
+    "typescript": "3.2.2"
+  },
+  "peerDependencies":  {
+    "vue": "^2.5.21"
+  }
+}
