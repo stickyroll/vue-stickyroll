@@ -8,12 +8,12 @@ yarn add @stickyroll/vue
 
 ```vue
 <template>
-	<vue-stickyroll :pages="4" :factor="1" class="dark">
+	<Stickyroll :pages="4" anchors="my/sticky/vue">
 		<template slot-scope="context">
 			<div>{{context.page}} of {{context.pages}}</div>
 			<div>{{context.progress}}</div>
 		</template>
-	</vue-stickyroll>
+	</Stickyroll>
 </template>
 
 <script>
@@ -21,15 +21,16 @@ import Stickyroll from "@stickyroll/vue";
 export default {
 	name: "App",
 	components: {
-		vueStickyroll: Stickyroll
+		Stickyroll
 	}
 };
 </script>
 
+<style src="@stickyroll/vue/index.css"></style>
+
 <style scoped>
-.dark {
-	background: #333;
-	color: #fff;
+body {
+	margin: 0;
 }
 </style>
 ```
